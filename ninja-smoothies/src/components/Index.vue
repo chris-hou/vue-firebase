@@ -29,16 +29,23 @@ export default {
   },
   methods: {
     deleteSmoothie(id) {
-      this.smoothies = this.smoothies.filter(smoothie => {
-        return smoothie.id != id
+      db.collection('smoothies').delete(id)
+      .then(() => {
+        this.smoothies = this.smoothies.filter(smoothie => {
+          return smoothie.id != id
+        })
       })
+      
     }
   },
   created() {
     db.collection('smoothies').get()
     .then(snapshot => {
       snapshot.docs.map(doc => {
-        console.log(doc.data())
+        // console.log(doc.data())
+        let smoothie = doc.data()
+        smoothie.id = doc.id
+        this.smoothies.push(smoothie)
       })
     })
   }
