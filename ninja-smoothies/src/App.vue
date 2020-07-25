@@ -7,11 +7,13 @@
 
 <script>
 import Navbar from '@/components/Navbar'
+import Index from '@/components/Index'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Index
   }
 }
 </script>
