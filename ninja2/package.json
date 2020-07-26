@@ -13,6 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "firebase": "^7.17.1",
+    "firestore": "^1.1.6",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
