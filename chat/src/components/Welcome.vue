@@ -31,4 +31,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.welcome {
+  max-width: 500px;
+}
 </style>
