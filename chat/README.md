@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -13,6 +13,12 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+npm install firebase --save
+
+npm install moment --save
+
+npm install vue-chat-scroll --save
 
 # build for production and view the bundle analyzer report
 npm run build --report

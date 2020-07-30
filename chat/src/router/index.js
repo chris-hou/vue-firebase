@@ -6,8 +6,8 @@ import Chat from '@/components/Chat'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  mode: 'history',
+  routes: [{
       path: '/',
       name: 'Welcome',
       component: Welcome
@@ -19,10 +19,12 @@ export default new Router({
       props: true,
       beforeEnter(to, from, next) {
         // console.log(to.params.name)
-        if(to.params.name) {
+        if (to.params.name) {
           next()
         } else {
-          next({name: 'Welcome'})
+          next({
+            name: 'Welcome'
+          })
         }
       }
     }
