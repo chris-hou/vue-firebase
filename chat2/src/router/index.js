@@ -2,12 +2,12 @@ import Vue from "vue";
 import Router from "vue-router";
 import Welcome from "@/components/Welcome";
 import Chat from "@/components/Chat";
+import Calendar from "@/components/Calendar";
 
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: "/",
       name: "Welcome",
       component: Welcome
@@ -26,6 +26,11 @@ export default new Router({
           });
         }
       }
-    }
+    },
+    {
+      path: "/calendar",
+      name: "Calendar",
+      component: Calendar
+    },
   ]
 });

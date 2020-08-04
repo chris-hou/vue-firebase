@@ -12,9 +12,12 @@
   "dependencies": {
     "firebase": "^7.17.1",
     "moment": "^2.27.0",
+    "v-calendar": "^1.0.0-beta.23",
     "vue": "^2.5.2",
     "vue-chat-scroll": "^1.4.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^2.3.7",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
